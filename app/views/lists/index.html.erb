@@ -1,7 +1,8 @@
 <h1>To Do list</h1>
+<%= link_to "Create a list", new_list_path %>
 <ul>
   <% @lists.each do |list| %>
     <li><%= link_to list.list_name, list_path(list) %></li>
+    <%= link_to "Delete", list_path(list), method: :delete, data: { confirm: "Es tu sur?"} %>
   <%end %>
 </ul>
-<%= link_to "Create a list", lists_new_path %>
