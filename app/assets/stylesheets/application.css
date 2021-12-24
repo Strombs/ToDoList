@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+.container {
+  background-color: #2A9D8F;
+  background-size: 100vh;
+}
+@import "config/colors"
