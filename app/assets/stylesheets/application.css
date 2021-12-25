@@ -13,27 +13,39 @@
  *= require_tree .
  *= require_self
  */
- @import "config/colors";
+ /* @import "config/colors"; */
  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
- .container {
-  background-color: #264653;
-  color: white;
-  min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
-  margin: 0px;
-  width: 100%;
-}
+ body {
+   background-color: #264653;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   padding: 0px;
+ }
 
 .lists {
-  background-color: #2A9D8F;
   text-decoration: none;
-  padding-bottom: 25px;
+  background-color: #2A9D8F;
+  padding: 25px;
+  color: white;
+  margin: 20px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 40px;
 }
 
 h1 {
   padding-left: 10px;
   padding-top: 10px;
   text-align: center;
-  margin-top: -8px;
+}
+
+.create {
+  text-decoration: none;
+  color: white;
+  background-color: #8AB17D;
+  padding: 8px 24px;
+  border: 2px solid black;
+  margin: 10px 0px 30px 50px;
+  border-radius: 40px;
 }

@@ -1,5 +1,5 @@
 <h1>To Do list</h1>
-<%= link_to "Create a list", new_list_path %>
+<%= link_to "Create a list", new_list_path, class:'create' %>
 <% @lists.each do |list| %>
   <div class= 'lists' >
     <%= list.status %>
