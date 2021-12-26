@@ -23,7 +23,6 @@
  }
 
 .lists {
-  text-decoration: none;
   font-size: 18px;
   background-color: #2A9D8F;
   padding: 25px;
@@ -31,8 +30,13 @@
   margin: 20px;
   border: 1px solid black;
   border-radius: 40px;
+  justify-content: space-between;
+  display: flex;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
 h1 {
   padding-left: 10px;
   padding-top: 10px;

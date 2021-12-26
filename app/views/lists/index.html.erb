@@ -3,7 +3,9 @@
 <% @lists.each do |list| %>
   <div class= 'lists' >
     <%= list.status %>
-    <%= link_to list.list_name, list_path(list) %>
+    <%# <div class="name"> %>
+      <%= link_to list.list_name, list_path(list) %>
+    <%# </div> %>
     <%= link_to "Delete", list_path(list), method: :delete, data: { confirm: "Es tu sur?"} %>
   </div>
 <%end %>
