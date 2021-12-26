@@ -13,23 +13,22 @@
  *= require_tree .
  *= require_self
  */
- /* @import "config/colors"; */
+
  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
  body {
    background-color: #264653;
    color: white;
    font-family: 'Roboto', sans-serif;
-   padding: 0px;
  }
 
 .lists {
   text-decoration: none;
+  font-size: 18px;
   background-color: #2A9D8F;
   padding: 25px;
   color: white;
   margin: 20px;
-  align-items: center;
   border: 1px solid black;
   border-radius: 40px;
 }
@@ -38,6 +37,7 @@ h1 {
   padding-left: 10px;
   padding-top: 10px;
   text-align: center;
+  text-decoration: underline;
 }
 
 .create {

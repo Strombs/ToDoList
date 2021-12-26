@@ -1,6 +1,9 @@
 <h1>Create a list</h1>
-<%= simple_form_for(@list) do |f| %>
-  <%= f.input :list_name %>
-  <%= f.input :description %>
-  <%= f.submit "Enregistrer" %>
-<% end %>
+<div class="container">
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :list_name %>
+    <%= f.input :description %>
+    <%= f.submit "Enregistrer", class:"create" %>
+  <% end %>
+</div>
+<%= link_to "Back to the lists", lists_path, class:"create" %>
