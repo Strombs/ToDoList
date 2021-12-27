@@ -15,6 +15,7 @@
  */
 
  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import "font-awesome-sprockets";
  @import "font-awesome";
 
  body {
@@ -34,9 +35,10 @@
   border-radius: 40px;
   justify-content: space-between;
   display: flex;
+  text-decoration: none;
 }
 a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: white;
 }
 h1 {
@@ -54,8 +56,4 @@ h1 {
   border: 2px solid black;
   margin: 10px 0px 30px 50px;
   border-radius: 40px;
-}
-
-.lists .fa-heart {
-  color: red;
 }
