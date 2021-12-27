@@ -26,13 +26,8 @@ class ListsController < ApplicationController
   end
 
   def update
-    @list = List.find(params[:id])
     @list.update(list_params)
-    if @list.save
-      redirect_to lists_path(@list)
-    else
-      render :new
-    end
+    redirect_to lists_path(@list)
   end
 
   def destroy
