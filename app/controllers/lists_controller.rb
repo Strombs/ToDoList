@@ -27,7 +27,11 @@ class ListsController < ApplicationController
 
   def update
     @list.update(list_params)
-    redirect_to lists_path(@list)
+    if @list.save
+      redirect_to lists_path(@list)
+    else
+      render :new
+    end
   end
 
   def destroy
