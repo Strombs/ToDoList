@@ -26,6 +26,7 @@ class ListsController < ApplicationController
   end
 
   def update
+    @list = List.find(params[:id])
     @list.update(list_params)
     if @list.save
       redirect_to lists_path(@list)
@@ -43,6 +44,6 @@ class ListsController < ApplicationController
   private
 
   def list_params
-    params.require(:list).permit(:list_name, :description)
+    params.require(:list).permit(:list_name)
   end
 end
